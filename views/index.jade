@@ -1,0 +1,72 @@
+extends layouts/creative/default
+
+block head
+  title Openmbed | Open source IoT cloud projects for ARM mbed.
+
+block neck
+
+block body
+  header#about
+    .header-content
+      .header-content-inner
+        h1(style='text-transform: none;') Openmbed
+        hr.light
+        h3 Open IoT cloud architecture for ARM mbed.
+          br
+          | Helps you build WoT apps faster.
+        p
+        a.btn.btn-primary.btn-xl.page-scroll(href='#open') Find Out More
+
+  section#open
+    .container
+      .row
+        .col-lg-6.col-md-6.text-center
+          h2.text-primary(style='font-size: 3em; font-weight: 400; line-height: 2em;') AutomationJS
+          p.lead Our templates are updated regularly so they don&apos;t break.
+        .col-lg-6.col-md-6.text-center
+          h2.text-primary(style='font-size: 3em; font-weight: 400; line-height: 2em;') wotcity-broker
+          p.lead You can use this theme as is, or you can make changes!
+
+  section#portfolio.no-padding
+    .container-fluid
+      .row.no-gutter
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='/creative/img/portfolio/1.jpg', alt='')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Category
+                .project-name
+                  | Project Name
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='/creative/img/portfolio/2.jpg', alt='')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Category
+                .project-name
+                  | Project Name
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='/creative/img/portfolio/3.jpg', alt='')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Category
+                |                             
+                .project-name
+                  | Project Name
+
+  section#contact
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading Contact
+          hr.primary
+          p Contact openmbed developers.
+        .col-lg-8.col-lg-offset-2.text-center
+          i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+          p
+            a(href='mailto:jollen@openmbed.org') jollen@openmbed.org

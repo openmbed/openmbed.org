@@ -1,0 +1,27 @@
+.background-size(@size) {
+  -webkit-background-size: @size;
+     -moz-background-size: @size;
+       -o-background-size: @size;
+          background-size: @size;
+}
+
+.btn-background(@color) {
+  background-color: @color;
+
+  &:hover,
+  &:focus {
+    background-color: mix(@color, white, 80%);
+  }
+
+  &:active,
+  &.active {
+    background-color: mix(@color, black, 85%);
+  }
+}
+
+.font(@font-size:16px,@color:@text-color-default){
+  @font-flat-ui: (@font-size/14); 
+  font-size: @font-flat-ui * @font-size-base;
+  font-weight:normal;
+  color: @color;
+}

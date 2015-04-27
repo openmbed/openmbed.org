@@ -189,11 +189,14 @@ module.exports = function(grunt) {
           src: ['**/*.less'],
           dest: 'public/views/',
           ext: '.min.css'
-        },{
+        }]
+      },
+      creative: {
+        files: [{
           expand: true,
-          cwd: 'public/creative/',
-          src: ['*.css', '**/*.css'],
-          dest: 'public/creative/',
+          cwd: 'public/creative/less',
+          src: ['creative.less'],
+          dest: 'public/creative/css',
           ext: '.min.css'
         }]
       },

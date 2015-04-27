@@ -13,7 +13,7 @@ block body
         hr.light
         h3 Open IoT cloud architecture for ARM mbed.
           br
-          | Helps you build WoT apps faster.
+          | Helps you building WoT cloud.
         p
         a.btn.btn-primary.btn-xl.page-scroll(href='#open') Find Out More
 
@@ -22,51 +22,61 @@ block body
       .row
         .col-lg-6.col-md-6.text-center
           h2.text-primary(style='font-size: 3em; font-weight: 400; line-height: 2em;') AutomationJS
-          p.lead Our templates are updated regularly so they don&apos;t break.
+          p.lead Real-time data compositor using Backbone model and view. AutomationJS is the view boundary compositor using virtual DOM.
+
+          a.btn.btn-primary.btn-xl(style='text-transform: none; margin-top: 2em;', href='https://github.com/openmbed/automationjs') Fork me on Github
         .col-lg-6.col-md-6.text-center
-          h2.text-primary(style='font-size: 3em; font-weight: 400; line-height: 2em;') wotcity-broker
-          p.lead You can use this theme as is, or you can make changes!
+          h2.text-info(style='font-size: 3em; font-weight: 400; line-height: 2em;') wotcity-broker
+          p.lead Websocket broker server for IoT cloud. wotcity-broker handles data push event from IoT devices, and routes real-time device data to clients.
+
+          a.btn.btn-info.btn-xl(style='text-transform: none; margin-top: 2em;', href='https://github.com/openmbed/wotcity-broker') Fork me on Github
 
   section#portfolio.no-padding
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2(style='text-transform: none;') Portfolio
+          hr
+          p 
     .container-fluid
       .row.no-gutter
         .col-lg-4.col-sm-6
-          a.portfolio-box(href='#')
-            img.img-responsive(src='/creative/img/portfolio/1.jpg', alt='')
+          a.portfolio-box(href='http://wotcity.com', target='_blank')
+            img.img-responsive(src='#{cdnServer}/img/portfolio/wotcity.jpg', alt='')
             .portfolio-box-caption
               .portfolio-box-caption-content
-                .project-category.text-faded
-                  | Category
                 .project-name
-                  | Project Name
+                  | WoT.City
+                .project-name.text-faded
+                  | The platform to build WoT apps faster.
         .col-lg-4.col-sm-6
-          a.portfolio-box(href='#')
-            img.img-responsive(src='/creative/img/portfolio/2.jpg', alt='')
+          a.portfolio-box(href='http://makee.io', target='_blank')
+            img.img-responsive(src='#{cdnServer}/img/portfolio/makee.jpg', alt='')
             .portfolio-box-caption
               .portfolio-box-caption-content
-                .project-category.text-faded
-                  | Category
                 .project-name
-                  | Project Name
+                  | Makee.io
+                .project-name.text-faded
+                  | A makers place to share their creativity.
         .col-lg-4.col-sm-6
-          a.portfolio-box(href='#')
-            img.img-responsive(src='/creative/img/portfolio/3.jpg', alt='')
+          a.portfolio-box(href='https://github.com/openmbed/openmbed.org/issues/new', target='_blank')
+            div(style='height: 210px; line-height: 210px; font-size: 5em; background-color: #ececec; text-align: center; vertical-align: middle; width: 100%;')
+              span.fa.fa-plus
             .portfolio-box-caption
               .portfolio-box-caption-content
-                .project-category.text-faded
-                  | Category
-                |                             
                 .project-name
-                  | Project Name
+                  | Add My Project
+                .project-name.text-faded
+                  | Share your project or business
 
   section#contact
     .container
       .row
         .col-lg-8.col-lg-offset-2.text-center
           h2.section-heading Contact
-          hr.primary
-          p Contact openmbed developers.
+          hr
+          p Contact Openmbed team.
         .col-lg-8.col-lg-offset-2.text-center
           i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
           p
-            a(href='mailto:jollen@openmbed.org') jollen@openmbed.org
+            a(href='mailto:contact@openmbed.org') contact@openmbed.org

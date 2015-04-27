@@ -135,6 +135,12 @@ module.exports = function(grunt) {
           src: ['**/*.js', '!**/*.min.js'],
           dest: 'public/views/',
           ext: '.min.js'
+        },{
+          expand: true,
+          cwd: 'public/creative/',
+          src: ['*.js', '**/*.js', '!**/*.min.js'],
+          dest: 'public/creative/',
+          ext: '.min.js'
         }]
       }
     },
@@ -185,9 +191,9 @@ module.exports = function(grunt) {
           ext: '.min.css'
         },{
           expand: true,
-          cwd: 'public/views/',
-          src: ['*.css'],
-          dest: 'public/views/',
+          cwd: 'public/creative/',
+          src: ['*.css', '**/*.css'],
+          dest: 'public/creative/',
           ext: '.min.css'
         }]
       },

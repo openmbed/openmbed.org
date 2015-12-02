@@ -1,0 +1,107 @@
+extends ./layouts/creative/default
+
+block head
+  title IoT School | Taiwan
+
+block neck
+
+block feet
+
+block body
+  .header2#about
+    .header-content
+      .header-content-inner
+        if rel === 'mailchimp'
+          p(style='font-weight: 300; font-size: 2em; color: #000;') 感謝您訂閱 WoT.City 郵件
+          p(style='font-weight: 300; font-size: 1.1em; color: #000;') 系統已發送確認郵件至您的信箱
+            br
+            | 請點擊郵件中的鏈接
+            br
+            | 以完成最後的訂閱確認
+        else
+          h2(style='font-size: 8em; color: #000; margin-bottom: 30px; margin-top: 0px; font-weight: 400;') IoT&nbsp;
+            span(style='font-weight: 200;') School
+
+      if rel !== 'mailchimp'
+        .row(style='margin-top: 70px;')
+          form#mc-embedded-subscribe-form.validate.form-inline(name='mc-embedded-subscribe-form', role='form', novalidate='', method='post', action='//mokoversity.us3.list-manage.com/subscribe/post?u=96d063c98fad791e496f41e8f&amp;id=0e547868c2', target='_blank')
+            .input-group
+              input#mce-EMAIL.email.form-control.form-control-ghost(type='email', value='', name='EMAIL', placeholder='輸入 Email 訂閱開課消息', size='42', required='')
+              a.input-group-addon#mc-embedded-subscribe.btn.btn-subscribe.btn-lg(style='text-transform: none;', type='submit', name='subscribe', onclick='submit();') 訂閱
+            div(style='position: absolute; left: -5000px;')
+              input(type='text', name='b_96d063c98fad791e496f41e8f_0e547868c2', tabindex='-1', value='')
+
+  section(style='background-color: #fff; color: #000;')
+    .container(style='margin-top: -10px;')
+      .row
+        .col-md-6.col-md-offset-3.text-center
+          h3 IoT School Taiwan
+          p(style='font-weight: 300; font-size: 24px; color: #000;') 由一群工程師與創客組成的 IoT 教育訓練計畫，打造規劃完善，未來 5 年都受用的 IoT 軟硬體技術
+          a.ghost-button-inverse(href='#') 認識 Full Scale 課程設計 (Coming)
+          a.ghost-button-inverse(style='margin-left: 15px;', href='#') 未來 IoT 要學什麼 ? (Coming)
+
+  section(style='background-color: #efefef; color: #222;')
+    .container(style='margin-top: 0px; margin-bottom: 15px;')
+      .row
+        .col-md-8.col-md-offset-2.text-center
+          h3 理念與特色
+          hr
+          p 未來五年，真正需要的 IoT 開發技術都在 IoT School Taiwan
+      .row(style='margin-top: 30px;')
+        .col-md-4.text-center
+          h3 Full Scale
+          p 提出獨創的 Full Scale 課程規劃觀念
+        .col-md-4.text-center
+          h3 Full Range
+          p 打造 Device、Cloud 與 App 的全域課程體系
+        .col-md-4.text-center
+          h3 Full Stack
+          p 打造 Full Stack 的全端課程體系
+
+  aside(style='background: #fff; color: #000; font-weight: 200;')
+    .container.text-center(style='margin-bottom: 25px; margin-top: 80px;')
+      .row
+        .col-md-4.col-lg-4.col-sm-4.col-hidden-xs
+          .text-left
+            h2(style='font-size: 2em; font-weight: 200; line-height: 1.5em; letter-spacing: 1px;') 總計 4 大類課程規劃
+            ul
+              li IoT Cloud
+              li IoT Protocols
+              li IoT App (Web Fusion)
+              li IoT OS
+            p 將陸續上線
+        .col-md-8.col-lg-8.col-sm-8.hidden-xs
+          img.img-responsive(src='#{cdnServer}/images/block/iotschool.png')
+
+  aside(style='background: #557c6e; color: #ffffff; font-weight: 200;')
+    .container.text-center(style='margin-bottom: 25px; margin-top: 80px;')
+      .row
+        .col-md-6.col-lg-6.col-sm-6.hidden-xs
+          h2 IoT OS 系列
+
+        .col-md-6.col-lg-6.col-sm-6.col-xs-12
+          .text-left
+            h2(style='font-size: 2em; font-weight: 200; line-height: 1.5em; letter-spacing: 1px;') IoT 101: FreeRTOS 與 lwIP
+            p(style='color: rgba(255,255,255,0.5); font-size: 0.9em;')
+              | 在 MCU 硬體上，使用 FreeRTOS 與 lwIP 開發 IoT 裝置。課程以易於取得，廣受觀迎的 ESP8266 做為上機演練平台。
+            a.btn.btn-primary(style='text-transform: none', href='#') 即線上線
+
+          p.page-header
+          .text-left
+            h2(style='font-size: 2em; font-weight: 200; line-height: 1.5em; letter-spacing: 1px;') IoT 102: OpenWRT
+            p(style='color: rgba(255,255,255,0.5); font-size: 0.9em;')
+              | 在 Single board computer 硬體上，使用 OpenWRT 開發 IoT 裝置。課程以 MTK7688 做為上機演練平台。
+            a.btn.btn-primary(style='text-transform: none', href='#') 即線上線
+
+  section(style='background-color: #fff; color: #000;')
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h3 IoT School Taiwan 成員
+      .row
+        .col-lg-4.col-md-4.col-xs-6.col-sm-4.text-center
+          img.img-responsive(style='margin: auto auto auto auto;', src='#{cdnServer}/images/logo/moko365.png')
+        .col-lg-4.col-md-4.col-xs-6.col-sm-4.text-center
+          img.img-responsive(style='margin: 0 auto 0 auto;', src='http://makee.io/manual/img/makee_logo.jpg')
+        .col-lg-4.col-md-4.col-xs-6.col-sm-4.text-center
+          img.img-responsive(style='width: 180px', src='#{cdnServer}/images/logo/wotcity-logo-orange.png')
